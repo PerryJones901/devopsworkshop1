@@ -13,6 +13,8 @@ for instruction in listOfCalcs:
         sum += (int(parts[2]) * int(parts[3]))
     elif(parts[1] == '/'):
         sum += (int(parts[2]) / int(parts[3]))
+    elif(parts[1] == '%'):
+        sum += (int(parts[2]) % int(parts[3]))
     else:
         print('Invalid operation.')
 print(sum)
